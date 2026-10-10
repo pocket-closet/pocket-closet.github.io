@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Pocket Closet icon: soft rounded star, pastel cottagecore -->
+  <rect width="512" height="512" rx="112" fill="#FBF4EA"/>
+  <rect x="14" y="14" width="484" height="484" rx="100" fill="none" stroke="#EADBC6" stroke-width="6"/>
+  <!-- star: gold rim underneath, pink on top (thick round-joined strokes round the points) -->
+  <polygon points="256,120 297.1,213.4 398.7,223.6 322.6,291.6 344.2,391.4 256,340 167.8,391.4 189.4,291.6 113.3,223.6 214.9,213.4" fill="#D8AE6A" stroke="#D8AE6A" stroke-width="46" stroke-linejoin="round"/>
+  <polygon points="256,120 297.1,213.4 398.7,223.6 322.6,291.6 344.2,391.4 256,340 167.8,391.4 189.4,291.6 113.3,223.6 214.9,213.4" fill="#F4C6D0" stroke="#F4C6D0" stroke-width="32" stroke-linejoin="round"/>
+  <!-- soft shine -->
+  <ellipse cx="222" cy="218" rx="26" ry="14" fill="#FFFFFF" opacity="0.6" transform="rotate(-30 222 218)"/>
+  <!-- sparkles -->
+  <path d="M404 96 Q409 127 440 132 Q409 137 404 168 Q399 137 368 132 Q399 127 404 96Z" fill="#D8AE6A"/>
+  <path d="M116 378 Q119 398 139 401 Q119 404 116 424 Q113 404 93 401 Q113 398 116 378Z" fill="#A9BFA0"/>
+  <path d="M398 372 Q401 395 424 398 Q401 401 398 424 Q395 401 372 398 Q395 395 398 372Z" fill="#EBA0B2"/>
+</svg>

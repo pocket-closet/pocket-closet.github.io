@@ -1,0 +1,15 @@
+{
+  "name": "Pocket Closet",
+  "short_name": "Pocket Closet",
+  "description": "A private, offline closet for your Infinity Nikki outfits. Unofficial fan tool.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#FBF4EA",
+  "theme_color": "#FBF4EA",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

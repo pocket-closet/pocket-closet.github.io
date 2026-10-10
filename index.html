@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pocket Closet</title>
+  <meta name="description" content="A private, offline closet for your Infinity Nikki outfits. Unofficial fan tool.">
+  <meta name="theme-color" content="#FBF4EA">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app" aria-live="polite"></main>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="drop" aria-hidden="true"><span>Drop screenshots to add them ✨</span></div>
+  <input id="filePick" type="file" accept="image/*" multiple hidden>
+  <nav class="tabbar" aria-label="Sections">
+    <button type="button" data-view="closet">Closet</button>
+    <button type="button" data-view="settings">Settings</button>
+  </nav>
+  <noscript>This app needs JavaScript turned on.</noscript>
+  <script src="vendor/jsQR.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

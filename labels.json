@@ -1,0 +1,42 @@
+{
+  "_about": "Official Infinity Nikki labels, spelled as in game (Filter menu, 2026-10-08). Colors are our own approximations, not taken from game files. New labels arrive with major updates: add them to 'official' with the update they came in.",
+  "style": [
+    { "id": "elegant", "name": "Elegant", "color": "#E3AE5E" },
+    { "id": "sweet",   "name": "Sweet",   "color": "#F2909C" },
+    { "id": "cool",    "name": "Cool",    "color": "#6F9BD1" },
+    { "id": "fresh",   "name": "Fresh",   "color": "#82B48A" },
+    { "id": "sexy",    "name": "Sexy",    "color": "#A983D4" }
+  ],
+  "official": [
+    { "id": "warm",         "name": "Warm",         "color": "#5A9BC4", "added": "launch" },
+    { "id": "summer",       "name": "Summer",       "color": "#E8708A", "added": "launch" },
+    { "id": "home",         "name": "Home",         "color": "#7DBE6E", "added": "launch" },
+    { "id": "formal",       "name": "Formal",       "color": "#E3A24A", "added": "launch" },
+    { "id": "simple",       "name": "Simple",       "color": "#E8686A", "added": "launch" },
+    { "id": "fantasy",      "name": "Fantasy",      "color": "#5DB89A", "added": "launch" },
+    { "id": "intellectual", "name": "Intellectual", "color": "#E89A4C", "added": "launch" },
+    { "id": "adventure",    "name": "Adventure",    "color": "#E8735A", "added": "launch" },
+    { "id": "romance",      "name": "Romance",      "color": "#E07090", "added": "launch" },
+    { "id": "retro",        "name": "Retro",        "color": "#E8925A", "added": "launch" },
+    { "id": "fashion",      "name": "Fashion",      "color": "#8AB86A", "added": "launch" },
+    { "id": "uniform",      "name": "Uniform",      "color": "#6A8FD8", "added": "launch" },
+    { "id": "fairy",        "name": "Fairy",        "color": "#6CC0A8", "added": "launch" },
+    { "id": "ballroom",     "name": "Ballroom",     "color": "#E39A4A", "added": "launch" },
+    { "id": "royal",        "name": "Royal",        "color": "#E06868", "added": "launch" },
+    { "id": "linlang",      "name": "Linlang",      "color": "#E0B050", "added": "launch" },
+    { "id": "pastoral",     "name": "Pastoral",     "color": "#7DB86A", "added": "launch" },
+    { "id": "playful",      "name": "Playful",      "color": "#7A8FE0", "added": "launch" },
+    { "id": "trendy",       "name": "Trendy",       "color": "#E8955A", "added": "launch" },
+    { "id": "cute",         "name": "Cute",         "color": "#E880A0", "added": "launch" },
+    { "id": "light",        "name": "Light",        "color": "#E3B85A", "added": "launch" },
+    { "id": "more-light",   "name": "More Light",   "color": "#D8A848", "added": "launch" },
+    { "id": "divine",       "name": "Divine",       "color": "#E8905A", "added": "launch" },
+    { "id": "forest",       "name": "Forest",       "color": "#5DB89A", "added": "launch" },
+    { "id": "spirited",     "name": "Spirited",     "color": "#4F8FC0", "added": "launch" },
+    { "id": "classical",    "name": "Classical",    "color": "#E06A6A", "added": "launch" },
+    { "id": "terra",        "name": "Terra",        "color": "#D8B060", "added": "launch" },
+    { "id": "aesthetic",    "name": "Aesthetic",    "color": "#7088E0", "added": "launch" },
+    { "id": "whimsy",       "name": "Whimsy",       "color": "#E07098", "added": "launch" },
+    { "id": "glow",         "name": "Glow",         "color": "#8FC460", "added": "launch" }
+  ]
+}
