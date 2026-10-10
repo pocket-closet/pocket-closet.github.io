@@ -71,7 +71,7 @@ h2 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: v
 .collhead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px; margin: 4px 0 10px; }
 .collhead h2 { margin: 0; font-size: 17px; text-transform: none; letter-spacing: 0; color: var(--ink); }
 .collbtns { display: flex; flex-wrap: wrap; gap: 6px; }
-.primary.small { padding: 7px 12px; font-size: 13px; }
+.primary.small, .danger.small { padding: 7px 12px; font-size: 13px; }
 .covbtn { margin-top: 12px; }
 
 /* select mode */

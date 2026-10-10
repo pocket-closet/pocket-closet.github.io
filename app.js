@@ -948,6 +948,26 @@ function updateSelectBar() {
   const n = state.selected.size;
   bar.querySelector('.selcount').textContent = n ? `${n} selected` : 'Tap outfits to select them';
   bar.querySelectorAll('.needs').forEach((b) => { b.disabled = !n; });
+  const shown = visibleOutfits();
+  bar.querySelector('.selall').textContent =
+    shown.length && shown.every((o) => state.selected.has(o.id)) ? 'Select none' : `Select all (${shown.length})`;
+}
+
+// Deletes many outfits at once, in one go (like the game's lookbook and photo album).
+async function deleteOutfits(list) {
+  const ids = list.map((o) => o.id);
+  await tx(['outfits', 'images'], 'readwrite', (os, is) => {
+    for (const id of ids) {
+      is.delete(`${id}:full`);
+      is.delete(`${id}:thumb`);
+      os.delete(id);
+    }
+  });
+  outfits = outfits.filter((o) => !ids.includes(o.id));
+  for (const id of ids) {
+    if (thumbUrls.has(id)) URL.revokeObjectURL(thumbUrls.get(id));
+    thumbUrls.delete(id);
+  }
 }
 
 function selectBar() {
@@ -980,6 +1000,26 @@ function selectBar() {
           finish(`Removed ${plural(list.length, 'outfit')} from ${coll.name}`);
         },
       }, 'Remove from here') : null,
+      h('button', {
+        type: 'button', class: 'danger small needs',
+        onclick: async () => {
+          const list = picked();
+          if (!await ask(`Delete ${plural(list.length, 'outfit')}? Their pictures and codes will be gone. This can't be undone.`,
+            'Delete', 'Keep them', true)) return;
+          await deleteOutfits(list);
+          finish(`Deleted ${plural(list.length, 'outfit')}`);
+        },
+      }, '🗑️ Delete'),
+      h('button', {
+        type: 'button', class: 'ghost small selall',
+        onclick: () => {
+          const shown = visibleOutfits();
+          const all = shown.every((o) => state.selected.has(o.id));
+          shown.forEach((o) => (all ? state.selected.delete(o.id) : state.selected.add(o.id)));
+          fillGrid(state.gridShown);
+          updateSelectBar();
+        },
+      }, 'Select all'),
       h('button', { type: 'button', class: 'ghost small', onclick: () => { state.selecting = false; state.selected.clear(); render(); } }, 'Done')
     )
   );
